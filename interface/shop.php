@@ -1,9 +1,9 @@
 <?php
     include('./conn.php');
 
-    $idList = $_REQUEST['idlist'];
+    $sid= $_REQUEST['sid'];
 
-    $sql = "select * from registe where id in ($idList)";
+    $sql = "select * from registe where id in ($sid)";
 
     $res = $mysqli->query($sql);
 

@@ -6,12 +6,12 @@ define(['jquery', 'cookie'], function($, cookie) {
 
             if (shop) {
                 shop = JSON.parse(shop);
-                let idlist = shop.map(elm => elm.id).join();
+                let sid = shop.map(elm => elm.sid).join();
                 $.ajax({
                     type: "get",
                     url: `${baseUrl}/interface/shop.php`,
                     data: {
-                        idlist: idlist
+                        sid: sid
                     },
                     dataType: "json",
                     success: function(res) {
