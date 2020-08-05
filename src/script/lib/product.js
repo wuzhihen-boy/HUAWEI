@@ -237,15 +237,14 @@ define(['jquery', 'cookie'], function($, cookie) {
                 shop = []; // 不存在新建数组
                 shop.push(product); // 放入商品
             }
-
             cookie.set('shop', JSON.stringify(shop), 1);
         },
 
         wang: function() {
             //放大镜滚动事件
 
-            // $('body').on('mousewheel',function(){
-            // console.log($(window).scrollTop() + 'px')
+            // $('body').on('mousewheel', function() {
+            //         console.log($(window).scrollTop() + 'px')
             let top = $(window).scrollTop();
             // if($(window).scrollTop() > 110 || $(window).scrollTop() <400){
             $('.fangdaj').css(
