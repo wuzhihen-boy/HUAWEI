@@ -56,10 +56,10 @@ define(['jquery', 'cookie'], function($, cookie) {
                 }
             })
 
-            console.log($("#" + $(this).attr('title')))
+            // console.log($("#" + $(this).attr('title')))
             $('.palt>li>a').on('click', function() {
                 let top = $("#" + $(this).attr('title')).offset().top;
-                console.log(top)
+                // console.log(top)
                 $('html,body').animate({
                     scrollTop: top
                 }, 600);
